@@ -2,8 +2,7 @@
     <core-scroll-to-top v-bind="$attrs">
         <template v-slot:default="{ visible, type, controlEvents }">
             <zoom>
-        <s-scroll-to-top :isRTL='isRTL'>
-                <div class="button"
+                <div class="button scroll-control"
                     :class="type"
                     v-on="controlEvents"
                     v-if="visible">
@@ -11,7 +10,6 @@
                         <fa icon="arrow-alt-circle-up"/>
                     </span>
                 </div>
-        </s-scroll-to-top>
             </zoom>
         </template>
     </core-scroll-to-top>
@@ -22,20 +20,31 @@ import { Zoom } from '@enso-ui/transitions';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 import CoreScrollToTop from '../renderless/CoreScrollToTop.vue';
-import SScrollToTop from './styled/SScrollToTop';
 
 library.add(faArrowAltCircleUp);
 
 export default {
     name: 'ScrollToTop',
 
-    props:{
-        isRTL:{
-            type: Boolean,
-            default: false,
-        },
-    },
-
-    components: { CoreScrollToTop, Zoom, SScrollToTop },
+    components: { CoreScrollToTop, Zoom },
 };
 </script>
+
+<style lang="scss">
+$directions : 'rtl' , 'ltr';
+@each $dir in $directions {
+    .scroll-control {
+        z-index: 3;
+        position: fixed;
+        bottom: 2em;
+        @if $dir == 'rtl' {
+            [dir='#{$dir}'] & {
+                left: 1.5em;
+                right: unset;
+            }
+        } @else {
+            right: 1.5em;
+        }
+    }
+}
+</style>
