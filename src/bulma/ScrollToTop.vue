@@ -37,7 +37,6 @@ $directions : 'rtl' , 'ltr';
         z-index: 3;
         position: fixed;
         bottom: 2em;
-        /* right: 1.5em; */
         @if $dir == 'rtl' {
             [dir='#{$dir}'] & {
                 left: 1.5em;
