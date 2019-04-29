@@ -31,20 +31,15 @@ export default {
 </script>
 
 <style lang="scss">
-$directions : 'rtl' , 'ltr';
-@each $dir in $directions {
     .scroll-control {
         z-index: 3;
         position: fixed;
         bottom: 2em;
-        @if $dir == 'rtl' {
-            [dir='#{$dir}'] & {
-                left: 1.5em;
-                right: unset;
-            }
-        } @else {
-            right: 1.5em;
+        right: 1.5em;
+        [dir='rtl'] & {
+            left: 1.5em;
+            right: unset;
         }
     }
-}
+
 </style>
