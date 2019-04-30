@@ -30,11 +30,17 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
     .scroll-control {
         z-index: 3;
         position: fixed;
         bottom: 2em;
-        right: 1.5em;
+        [dir='ltr'] & {
+            right: 1.5em;
+        }
+        [dir='rtl'] & {
+            left: 1.5em;
+        }
     }
+
 </style>
