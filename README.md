@@ -1,10 +1,10 @@
 # Loader
 
-![npm license](https://img.shields.io/npm/l/@enso-ui/loader.svg) 
-![npm download](https://img.shields.io/npm/dm/@enso-ui/loader.svg) 
-![GitHub top language](https://img.shields.io/github/languages/top/enso-ui/loader.svg) 
-![GitHub issues](https://img.shields.io/github/issues/enso-ui/loader.svg) 
-![npm version](https://img.shields.io/npm/v/@enso-ui/loader.svg) 
+![npm license](https://img.shields.io/npm/l/@enso-ui/scroll-to-top.svg) 
+![npm download](https://img.shields.io/npm/dm/@enso-ui/scroll-to-top.svg) 
+![GitHub top language](https://img.shields.io/github/languages/top/enso-ui/scroll-to-top.svg) 
+![GitHub issues](https://img.shields.io/github/issues/enso-ui/scroll-to-top.svg) 
+![npm version](https://img.shields.io/npm/v/@enso-ui/scroll-to-top.svg) 
 
 Simple loader
 
@@ -15,23 +15,9 @@ The component can be used outside of the Enso ecosystem.
 
 For live examples and demos, you may visit [laravel-enso.com](https://www.laravel-enso.com)
 
-Check the full documentation at  [docs.laravel-enso.com](https://docs.laravel-enso.com).
+### Installation, Configuration & Usage
 
-### Installation
-
-Install the package:
-```
-npm i @enso-ui/loader
-```
-Import the desired component(s):
-```js
-import Loader from '@enso-ui/loader/bulma';
-```
-
-### Exports
-
-`@enso-ui/loader/bulma`:
-- `Loader`
+Be sure to check out the full documentation for this package available at [docs.laravel-enso.com](https://docs.laravel-enso.com/frontend/scroll-to-top.html)
 
 ## Contributions
 
