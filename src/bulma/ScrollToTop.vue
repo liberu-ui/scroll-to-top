@@ -6,9 +6,11 @@
                     :class="type"
                     v-on="controlEvents"
                     v-if="visible">
-                    <span class="icon is-large">
-                        <fa icon="arrow-alt-circle-up"/>
-                    </span>
+                    <slot>
+                        <span class="icon is-large">
+                            <fa icon="arrow-alt-circle-up"/>
+                        </span>
+                    </slot>
                 </div>
             </zoom>
         </template>
@@ -34,12 +36,23 @@ export default {
     .scroll-control {
         z-index: 3;
         position: fixed;
-        bottom: 2em;
-        [dir='ltr'] & {
-            right: 1.5em;
+        @media screen and (min-width: 769px) {
+            bottom: 2em;
+            [dir='ltr'] & {
+                right: 1.5em;
+            }
+            [dir='rtl'] & {
+                left: 1.5em;
+            }
         }
-        [dir='rtl'] & {
-            left: 1.5em;
+        @media screen and (max-width: 768px) {
+            bottom: 1em;
+            [dir='ltr'] & {
+                right: 0.5em;
+            }
+            [dir='rtl'] & {
+                left: 0.5em;
+            }
         }
     }
 
