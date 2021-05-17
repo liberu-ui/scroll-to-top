@@ -46,7 +46,7 @@ export default {
             }
         }
         @media screen and (max-width: 768px) {
-            bottom: 1em;
+            bottom: 3em;
             [dir='ltr'] & {
                 right: 0.5em;
             }
