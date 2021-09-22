@@ -36,8 +36,9 @@ export default {
     .scroll-control {
         z-index: 3;
         position: fixed;
+        bottom: 3em;
+
         @media screen and (min-width: 769px) {
-            bottom: 2em;
             [dir='ltr'] & {
                 right: 1.5em;
             }
@@ -46,7 +47,6 @@ export default {
             }
         }
         @media screen and (max-width: 768px) {
-            bottom: 3em;
             [dir='ltr'] & {
                 right: 0.5em;
             }
