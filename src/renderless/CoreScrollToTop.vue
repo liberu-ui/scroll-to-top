@@ -50,7 +50,7 @@ export default {
     },
 
     render() {
-        return this.$scopedSlots.default({
+        return this.$slots.default({
             visible: this.visible,
             type: this.type,
             controlEvents: {
