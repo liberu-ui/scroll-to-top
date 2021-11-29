@@ -3,7 +3,7 @@
         <template #default="{ visible, type, controlEvents }">
             <zoom>
                 <div class="button scroll-control"
-                    :class="type"
+                    :class="[type, $attrs.class]"
                     v-on="controlEvents"
                     v-if="visible">
                     <slot>
