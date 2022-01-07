@@ -1,5 +1,5 @@
 <template>
-    <core-scroll-to-top v-bind="$attrs">
+    <core-scroll-to-top>
         <template #default="{ visible, type, controlEvents }">
             <zoom>
                 <div class="button scroll-control"
