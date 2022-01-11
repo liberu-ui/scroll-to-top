@@ -16,7 +16,15 @@ export default {
     }),
 
     mounted() {
-        const onScroll = () => {
+        window.addEventListener('scroll', this.onScroll);
+    },
+
+    unmounted() {
+        window.removeEventListener('scroll', this.onScroll);
+    },
+
+    methods: {
+        onScroll() {
             const position = Math.max(
                 document.body.scrollTop,
                 document.documentElement.scrollTop,
@@ -29,16 +37,7 @@ export default {
             this.position = position;
 
             this.visible = this.position > 100;
-        };
-
-        window.addEventListener('scroll', onScroll);
-
-        this.$once('hook:destroyed', () => {
-            window.removeEventListener('scroll', onScroll);
-        });
-    },
-
-    methods: {
+        },
         scroll() {
             const height = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -50,7 +49,7 @@ export default {
     },
 
     render() {
-        return this.$scopedSlots.default({
+        return this.$slots.default({
             visible: this.visible,
             type: this.type,
             controlEvents: {

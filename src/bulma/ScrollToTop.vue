@@ -1,9 +1,9 @@
 <template>
-    <core-scroll-to-top v-bind="$attrs">
-        <template v-slot:default="{ visible, type, controlEvents }">
+    <core-scroll-to-top>
+        <template #default="{ visible, type, controlEvents }">
             <zoom>
                 <div class="button scroll-control"
-                    :class="type"
+                    :class="[type, $attrs.class]"
                     v-on="controlEvents"
                     v-if="visible">
                     <slot>
@@ -19,6 +19,7 @@
 
 <script>
 import { Zoom } from '@enso-ui/transitions';
+import { FontAwesomeIcon as Fa } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 import CoreScrollToTop from '../renderless/CoreScrollToTop.vue';
@@ -28,7 +29,7 @@ library.add(faArrowAltCircleUp);
 export default {
     name: 'ScrollToTop',
 
-    components: { CoreScrollToTop, Zoom },
+    components: { CoreScrollToTop, Fa, Zoom },
 };
 </script>
 
