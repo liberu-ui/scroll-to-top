@@ -1,5 +1,5 @@
 {
-  "name": "@enso-ui/scroll-to-top",
+  "name": "@cgdsoftware/scroll-to-top",
   "version": "3.0.9",
   "description": "Scroll To Top",
   "main": "index.js",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/enso-ui/scroll-to-top#readme",
   "dependencies": {
-    "@enso-ui/transitions": "^2.0",
+    "@cgdsoftware/transitions": "^2.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "3.0.0-5",
