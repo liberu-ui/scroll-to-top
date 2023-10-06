@@ -1,6 +1,6 @@
 {
   "name": "@liberu-ui/scroll-to-top",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "description": "Scroll To Top",
   "main": "index.js",
   "scripts": {
