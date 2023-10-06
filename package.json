@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enso-ui/scroll-to-top.git"
+    "url": "git+https://github.com/liberu-ui/scroll-to-top.git"
   },
   "keywords": [
     "scroll-to-top",
@@ -18,9 +18,9 @@
   "author": "Adrian Ocneanu <aocneanu@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enso-ui/scroll-to-top/issues"
+    "url": "https://github.com/liberu-ui/scroll-to-top/issues"
   },
-  "homepage": "https://github.com/enso-ui/scroll-to-top#readme",
+  "homepage": "https://github.com/liberu-ui/scroll-to-top#readme",
   "dependencies": {
     "@liberu-ui/transitions": "^2.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.2",
