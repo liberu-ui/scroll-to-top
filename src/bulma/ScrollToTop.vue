@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { Zoom } from '@enso-ui/transitions';
+import { Zoom } from '@liberu-ui/transitions';
 import { FontAwesomeIcon as Fa } from '@fortawesome/vue-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
